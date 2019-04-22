@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link href="elveron-style.css" type="text/css" rel="stylesheet"> 
+	<title>ELVERON</title>
+</head>
+
+<body>
+	<div class="header">
+		<image class="resize_fit_center" src="head-image.jpg">
+		</image> 
+	</div>	
+
+	<div class="container">
+		<form method="POST" action="home.php">
+
+			<h2 class="signin">Sign In</h2>
+
+			<input type="text" name="username" placeholder="username" class="form-field" maxlength="20" minlength="6" required>
+			<br>
+			<input type="password" name="password" placeholder="password" class="form-field" maxlength="20" minlength="6" required>
+			<input id="submit" type="submit" value="login" class="login-button">
+		</form>	
+		<br>
+	</div>	
+
+	<div class="container">
+		<form method="POST" action="Create_Account.php">
+
+			<h2 class="signup">Sign Up</h2>
+<!--
+			<input type="radio" name="alignment" class="alignment" id="alignment-good" value="Good">
+          	<label class="alignment" id="alignment-good" for="Good">Good</label>
+          	
+          	<input type="radio" name="alignment" class="alignment" id="alignment-evil" value="Evil">
+          	<label class="alignment" id="alignment-evil" for="Evil">Evil</label>
+-->	
+			<input type="text" name="username" placeholder="username" class="form-field" maxlength="20" minlength="6" required>
+			<input type="text" name="email" placeholder="email" class="form-field" maxlength="20" minlength="6" required>
+			<input type="password" name="password" placeholder="password" class="form-field" maxlength="20" minlength="6" required>
+			<!--<input type="text" name="Kingdom-name" placeholder="Kingdom Name" class="form-field" maxlength="20" minlength="3" required>
+			<input type="text" name="ruler-name" placeholder="Ruler Name" class="form-field" maxlength="20" minlength="3" required>-->
+			
+          	<!--Make it so if you choose good or evil you can only pick certain races u CUNT-->
+          	<section class="race">
+          		<label style="color: white" for="race">Choose your race!</label>
+          		<select name="race" id="race">
+            		<option class="race-select" value="human">Human</option>
+            		<option class="race-select" value="shinobi">Shinobi</option>
+            		<option class="race-select" value="vampire">Vampire</option>
+          			<option class="race-select" value="flameweaver">Flameweaver</option>
+          		</select>
+        	</section>
+			<input type="submit" value="Create Kingdom!" class="create-kingdom-button">
+		</form>	
+		<br>
+	</div>
+	<!--
+	<div class="container-sidebar">
+		<a><image src="nature-sidebar.jpeg" height="868" width="360" >
+			
+	</a>
+
+
+	</div>
+-->
+
+</body>
+</html>
